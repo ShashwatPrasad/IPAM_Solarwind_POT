@@ -1,4 +1,10 @@
+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
+test
+test_IP=$(curl ifconfig.me/all.json | awk 'NR==2{print $3}'|tr -d \" | tr -d \,)
+curl http://checkip.dyndns.org  2> /dev/null| perl -pe  's,.*Address: (\d+\.\d+\.\d+\.\d+).*,$1,'
+echo "test_IP"
 
+ansible localhost -m shell -a '(curl 'https://api.ipify.org' -s >> /tmp/test1)'
 test
 test_IP=$(curl ifconfig.me/all.json | awk 'NR==9{print $3}'|tr -d \" | tr -d \,)
 echo "test_IP"
