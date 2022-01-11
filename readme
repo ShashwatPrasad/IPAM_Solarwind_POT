@@ -8,3 +8,7 @@ ansible localhost -m shell -a '(curl 'https://api.ipify.org' -s >> /tmp/test1)'
 test
 test_IP=$(curl ifconfig.me/all.json | awk 'NR==9{print $3}'|tr -d \" | tr -d \,)
 echo "test_IP"
+
+
+Ansible working command /11/01/2021
+ansible localhost -m shell -a 'for IP_shash in $(curl 'https://api.ipify.org' -s); do echo $IP_shash; done'"
