@@ -1,0 +1,13 @@
+---
+   - name: system_checks
+     hosts: localhost
+     tasks:
+       - name: Ansible IP fetch  
+         register: shell_output
+         shell: |
+              IP_shash=0.0.0.0
+              echo $IP_shash 
+              for IP_shash in $(curl 'https://api.ipify.org' -s); do echo $IP_shash; done
+              echo $IP_shash 
+       - debug: 
+           var: shell_output.stdout_lines
