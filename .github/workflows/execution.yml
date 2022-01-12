@@ -33,5 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           ansible-playbook IP_Ansible.yml
+          ansible-playbook IP_Ansible_file.yml
         
           echo "Deployed"
