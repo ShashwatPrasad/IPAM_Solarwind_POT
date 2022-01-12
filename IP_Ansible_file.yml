@@ -10,5 +10,6 @@
               /n 
               cat /root/IPAM_Solarwind_POT/IPAM_Solarwind_POT/VM_Deployment.yml | grep -i UbuntuOSIPv4Address
               sed -i "/UbuntuOSIPv4Address:/c\    UbuntuOSIPv4Address:       $UbuntuOSIPv4Address                   # Ubuntu OS IPv4 address" /root/IPAM_Solarwind_POT/IPAM_Solarwind_POT/VM_Deployment.yml
+              cat /root/IPAM_Solarwind_POT/IPAM_Solarwind_POT/VM_Deployment.yml | grep -i UbuntuOSIPv4Address 
        - debug: msg="{{shell_output.stdout}}"
 
