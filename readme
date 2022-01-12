@@ -11,4 +11,8 @@ echo "test_IP"
 
 
 Ansible working command /11/01/2021
-ansible localhost -m shell -a 'for IP_shash in $(curl 'https://api.ipify.org' -s); do echo $IP_shash; done'"
+ansible localhost -m shell -a 'for IP_shash in $(curl 'https://api.ipify.org' -s); do echo $IP_shash; done'
+
+
+VM creation on VMware using template
+https://www.linuxsysadmins.com/deploy-vmware-virtual-machines-with-ansible/"
