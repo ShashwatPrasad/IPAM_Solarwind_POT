@@ -37,5 +37,7 @@ jobs:
           echo "IP Fetched from IPAM"
           ansible-playbook IP_Ansible_file.yml
           echo "IP Modified on the VM Deplyment file, ready to execute"
-          git config --global prasad.shashwat@gmail.com 
+          git config --local user.name "ShashwatPrasad"
+          git add .VM_Deployment.yml  
           git commit -m all
+          git push force https://ShashwatPrasad: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@github.com/ShashwatPrasad/IPAM_Solarwind_POT.git VM_Deployment.yml
