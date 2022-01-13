@@ -6,7 +6,8 @@ name: VM_IP_Update
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ main 
+     'IP_Ansible_file.yml']
   pull_request:
     branches: [ main ]
 
