@@ -25,7 +25,7 @@
     UbuntuOSLocale:            en_US                                # Ubuntu OS locale
     UbuntuOSKeyboardLayout:    en                                   # Ubuntu OS keyboard layout 
     UbuntuOSKeyboardVariant:   us                                   # Ubuntu OS keyboard variant
-    UbuntuOSIPv4Address:       118.210.200.2                   # Ubuntu OS IPv4 address
+    UbuntuOSIPv4Address:       40.122.28.219                   # Ubuntu OS IPv4 address
     UbuntuOSIPv4Gateway:       10.203.0.1                           # Ubuntu OS IPv4 gateway
     UbuntuOSIPv4DNS:           10.203.0.5                           # Ubuntu OS DNS server
     UbuntuOSSearchDomain:      sddc.lab                             # Ubuntu OS DNS search domain
