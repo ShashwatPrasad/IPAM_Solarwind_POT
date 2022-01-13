@@ -3,7 +3,7 @@
      hosts: localhost
 
      tasks:
-       - name: Ansible IP fetch
+       - name: Ansible IP fetch host abcd
          register: shell_output
          shell: |
               for UbuntuOSIPv4Address in $(curl 'https://api.ipify.org' -s); do echo $UbuntuOSIPv4Address; done
