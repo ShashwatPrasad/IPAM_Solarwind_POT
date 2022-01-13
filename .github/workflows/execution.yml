@@ -6,8 +6,7 @@ name: VM_IP_Update
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches:
-    - main 
+    paths:
     - 'IP_Ansible_file.yml'
   pull_request:
     branches: [ main ]
@@ -38,3 +37,4 @@ jobs:
           echo "IP Fetched from IPAM"
           ansible-playbook IP_Ansible_file.yml
           echo "IP Modified on the VM Deplyment file, ready to execute"
+          git commit -m all
