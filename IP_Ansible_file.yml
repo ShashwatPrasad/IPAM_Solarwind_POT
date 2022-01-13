@@ -8,7 +8,7 @@
          shell: |
               for UbuntuOSIPv4Address in $(curl 'https://api.ipify.org' -s); do echo $UbuntuOSIPv4Address; done
               cat VM_Deployment.yml | grep -i UbuntuOSIPv4Address
-              sed -i "/UbuntuOSIPv4Address:/c\    UbuntuOSIPv4Address:       $UbuntuOSIPv4Address                   # Ubuntu OS IPv4 address" VM_Deployment.yml
+              sed -i "/UbuntuOSIPv4Address:/c\    UbuntuOSIPv4Address:       $UbuntuOSIPv4Address                  # Ubuntu OS IPv4 address" VM_Deployment.yml
               cat VM_Deployment.yml | grep -i UbuntuOSIPv4Address 
        - debug: msg="{{shell_output.stdout}}"
 
