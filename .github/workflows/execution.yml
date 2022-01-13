@@ -37,4 +37,5 @@ jobs:
           echo "IP Fetched from IPAM"
           ansible-playbook IP_Ansible_file.yml
           echo "IP Modified on the VM Deplyment file, ready to execute"
+          git config --global prasad.shashwat@gmail.com 
           git commit -m all
