@@ -1,7 +1,6 @@
 ---
    - name: system_checks
      hosts: localhost
-     
      tasks:
        - name: Ansible IP fetch
          #register: shell_output
