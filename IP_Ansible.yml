@@ -5,8 +5,8 @@
        - name: Ansible IP fetch
          #register: shell_output
          shell: |
-              #IP_shash=0.0.0.0
-              #echo $IP_shash
+              IP_shash=0.0.0.0
+              echo $IP_shash
               for UbuntuOSIPv4Address in $(curl 'https://api.ipify.org' -s); do echo $UbuntuOSIPv4Address; done
               echo $IP_shash
          register: shell_output
