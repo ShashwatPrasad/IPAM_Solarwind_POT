@@ -10,5 +10,5 @@
               cat VM_Deployment.yml | grep -i UbuntuOSIPv4Address
               sed -i "/UbuntuOSIPv4Address:/c\    UbuntuOSIPv4Address:       $UbuntuOSIPv4Address                   # Ubuntu OS IPv4 address" VM_Deployment.yml
               cat VM_Deployment.yml | grep -i UbuntuOSIPv4Address 
-       - debug: msg="{{shell_output.stdout}}"
+       - debug: msg="{{shell_output.stdout_lines}}"
 
