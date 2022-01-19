@@ -41,3 +41,12 @@ jobs:
           git add .  
           git commit -m all
           git push --force https://ShashwatPrasad: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@github.com/ShashwatPrasad/IPAM_Solarwind_POT.git 
+          
+      # git result set
+      
+     - name: A/B Check
+           if: ${{ IP_shash }} != ${{ IP_shash }}
+           uses: actions/github-script@v3
+           with:
+           script: |
+                 core.setFailed('envA and envB are equivalent!')
