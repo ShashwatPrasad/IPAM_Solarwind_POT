@@ -47,9 +47,9 @@ jobs:
       
       - name: A/B Check
         run: |
-        if [ $IP_shash != 0 ]; then
-           echo "Wrong.  See status below:"
-           exit 1
-        fi   
+          if [ $IP_shash != 0 ]; then
+            echo "Wrong.  See status below:"
+            exit 1
+          fi   
         
         
