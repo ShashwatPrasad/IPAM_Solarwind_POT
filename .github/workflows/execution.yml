@@ -46,7 +46,7 @@ jobs:
       # git result set
       
       - name: A/B Check
-        if: $IP_shash != $IP_shash
+      - if: $IP_shash != 0 ;
         uses: actions/github-script@v3
         with:
           script: |
