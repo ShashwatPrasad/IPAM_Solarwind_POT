@@ -16,3 +16,11 @@ ansible localhost -m shell -a 'for IP_shash in $(curl 'https://api.ipify.org' -s
 
 VM creation on VMware using template
 https://www.linuxsysadmins.com/deploy-vmware-virtual-machines-with-ansible/"
+
+for Gitbuild fail
+- name: A/B Check
+  if: ${{ envA }} != ${{ envB }}
+  uses: actions/github-script@v3
+  with:
+    script: |
+        core.setFailed('envA and envB are not equivalent!')
